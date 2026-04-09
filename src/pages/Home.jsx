@@ -37,7 +37,7 @@ export default function Home() {
             <img src="/teachers/sandeep.jpg" width="100%" />
             <h3>Sandeep Sir</h3>
             <p>Mathematics & Science</p>
-            <p style={{ fontSize: "14px", color: "#64748B" }}>
+            <p style={{ fontSize: "20px", color: "#437fd3" }}>
               Focused on building strong concepts and problem-solving skills.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
             <img src="/teachers/sonu.jpg" width="100%" />
             <h3>Sonu Sir</h3>
             <p>Social Science (SST)</p>
-            <p style={{ fontSize: "14px", color: "#64748B" }}>
+            <p style={{ fontSize: "20px", color: "#437fd3" }}>
               Simplifies complex topics and helps students retain concepts easily.
             </p>
           </div>
