@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* QUOTE / TRUST LINE */}
       <section style={{ marginTop: "40px", textAlign: "center" }}>
-        <p style={{ fontStyle: "italic", color: "#475569" }}>
+        <p style={{ fontStyle: "italic", color: "#1224c7" }}>
           "Success in exams is not luck — it’s the result of consistent guidance and effort."
         </p>
       </section>
@@ -58,7 +58,7 @@ export default function Home() {
         <h2>Find Us</h2>
 
         <iframe
-          src="https://maps.google.com/maps?q=28.5339631,77.0507041&z=15&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56083.064041450314!2d76.9786063216797!3d28.5339631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bf279798b7b%3A0xaafaa438a8ce6e76!2sSharda%20Tutorial!5e0!3m2!1sen!2sin!4v1775760324307!5m2!1sen!2sin"
           width="100%"
           height="300"
           style={{ border: 0, marginTop: "16px" }}
