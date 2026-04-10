@@ -7,7 +7,7 @@ export default function Home() {
       <section className="hero">
         <h1>Strong Foundation for Classes 9–12</h1>
         <p>Small batches. Personal attention. Proven results.</p>
-        <Link to="/apply" className="btn">Apply Now</Link>
+        <Link to="/apply" className="applyhome-btn">Apply Now</Link>
       </section>
 
       {/* QUOTE / TRUST LINE */}
