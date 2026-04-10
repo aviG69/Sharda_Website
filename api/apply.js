@@ -1,15 +1,16 @@
 import { Resend } from "resend";
 
 export default async function handler(req, res) {
+  console.log("API HIT");
+
   if (req.method !== "POST") {
-    return res.status(405).json({
-      success: false,
-      message: "Method not allowed",
-    });
+    return res.status(405).json({ success: false, message: "Only POST allowed" });
   }
 
   try {
-    const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body || {};
+    const data = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+
+    console.log("Received data:", data);
 
     const {
       fullName,
@@ -18,70 +19,60 @@ export default async function handler(req, res) {
       parentPhone,
       subjectInterest,
       message,
-    } = body;
+    } = data;
 
-    if (
-      !fullName ||
-      !classLevel ||
-      !studentPhone ||
-      !parentPhone ||
-      !subjectInterest
-    ) {
+    // ✅ Check required fields
+    if (!fullName || !classLevel || !studentPhone || !parentPhone || !subjectInterest) {
       return res.status(400).json({
         success: false,
-        message: "Please fill all required fields.",
+        message: "Missing required fields",
       });
     }
 
+    // ✅ Check API key
     if (!process.env.RESEND_API_KEY) {
+      console.error("API KEY MISSING");
       return res.status(500).json({
         success: false,
-        message: "RESEND_API_KEY is missing.",
+        message: "API key not found",
       });
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const teacherEmails = [
-      "hellotakumi73@gmail.com",
-      "helloavi2301@gmail.com",
-    ];
-
     const emailText = `
-New Student Application
+New Application
 
-Full Name: ${fullName}
+Name: ${fullName}
 Class: ${classLevel}
 Student Phone: ${studentPhone}
 Parent Phone: ${parentPhone}
-Subject Interest: ${subjectInterest}
+Subject: ${subjectInterest}
 Message: ${message || "N/A"}
-    `.trim();
+`;
 
-    const { error } = await resend.emails.send({
+    console.log("Sending email...");
+
+    const response = await resend.emails.send({
       from: "Sharda Tutorial <onboarding@resend.dev>",
-      to: teacherEmails,
-      subject: `New Application - ${fullName}`,
+      to: ["hellotakumi73@gmail.com"], // CHANGE THIS
+      subject: "New Student Application",
       text: emailText,
     });
 
-    if (error) {
-      console.error("Resend error:", error);
-      return res.status(500).json({
-        success: false,
-        message: "Failed to send email.",
-      });
-    }
+    console.log("Resend response:", response);
 
     return res.status(200).json({
       success: true,
-      message: "Application submitted successfully.",
+      message: "Email sent successfully",
     });
+
   } catch (err) {
-    console.error("Apply API error:", err);
+    console.error("FULL ERROR:", err);
+
     return res.status(500).json({
       success: false,
-      message: "Server error.",
+      message: "Server crashed",
     });
   }
 }
