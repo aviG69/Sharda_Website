@@ -15,6 +15,12 @@
   justify-items: center;
 }
 
+.alumni-container > .alumni-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 560px;
+}
+
 .alumni-card {
   display: flex;
   flex-wrap: wrap;

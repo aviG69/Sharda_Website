@@ -25,17 +25,6 @@ const alumniData = [
     ],
   },
   {
-    name: "Sakshi Dipesh",
-    image: "/alumni/sakshi_dipesh.jpg",
-    exam: "CBSE BOARD RESULT 2026",
-    class: "Class X",
-    results: [
-      { subject: "Maths", marks: "97.00" },
-      { subject: "Science", marks: "90.00" },
-      { subject: "SST", marks: "93.00" },
-    ],
-  },
-  {
     name: "Vaishali",
     image: "/alumni/vaishali.jpg",
     exam: "CBSE BOARD RESULT 2026",
