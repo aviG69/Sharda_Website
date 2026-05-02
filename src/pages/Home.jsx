@@ -6,20 +6,6 @@ export default function Home() {
     <div>
       {/* HERO */}
       <section className="hero">
-        <div className="social-links-top" style={{ position: 'absolute', top: '10px', left: '10px', display: 'flex', gap: '10px' }}>
-          <a href="https://www.youtube.com/channel/UCiVzwYNYKlM5aCNj7cLccfw" target="_blank" rel="noopener noreferrer">
-            <FaYoutube style={{ color: '#FF0000', fontSize: '24px' }} />
-          </a>
-          <a href="https://www.facebook.com/sharda-tutorial" target="_blank" rel="noopener noreferrer"> 
-            <FaFacebook style={{ color: '#1877F2', fontSize: '24px' }} />
-          </a>
-          <a href="https://www.instagram.com/sharda_tutorial" target="_blank" rel="noopener noreferrer">
-            <FaInstagram style={{ color: '#E4405F', fontSize: '24px' }} />
-          </a>
-          <a href="https://www.twitter.com/sharda_tutorial" target="_blank" rel="noopener noreferrer">
-            <FaTwitter style={{ color: '#1DA1F2', fontSize: '24px' }} />
-          </a>
-        </div>
         <h1>Strong Foundation for Classes 9–12</h1>
         <p>Small batches. Personal attention. Proven results.</p>
         <Link to="/apply" className="applyhome-btn">Apply Now</Link>
