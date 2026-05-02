@@ -10,7 +10,7 @@ export default function Home() {
           <a href="https://www.youtube.com/channel/UCiVzwYNYKlM5aCNj7cLccfw" target="_blank" rel="noopener noreferrer">
             <FaYoutube style={{ color: '#FF0000', fontSize: '24px' }} />
           </a>
-          <a href="https://www.facebook.com/sharda-tutorial" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/sharda-tutorial" target="_blank" rel="noopener noreferrer"> 
             <FaFacebook style={{ color: '#1877F2', fontSize: '24px' }} />
           </a>
           <a href="https://www.instagram.com/sharda_tutorial" target="_blank" rel="noopener noreferrer">
