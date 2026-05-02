@@ -57,28 +57,6 @@ const alumniData = [
       { subject: "SST", marks: "93.00" },
     ],
   },
-  {
-    name: "All Students 1",
-    image: "/alumni/all.jpg",
-    exam: "CBSE BOARD RESULT 2026",
-    class: "Class X",
-    results: [
-      { subject: "Maths", marks: "94.00" },
-      { subject: "Science", marks: "85.00" },
-      { subject: "SST", marks: "91.00" },
-    ],
-  },
-  {
-    name: "All Students 2",
-    image: "/alumni/all2.jpg",
-    exam: "CBSE BOARD RESULT 2026",
-    class: "Class X",
-    results: [
-      { subject: "Maths", marks: "87.00" },
-      { subject: "Science", marks: "92.00" },
-      { subject: "SST", marks: "90.00" },
-    ],
-  },
 ];
 
 const AlumniCard = ({ alumni }) => {
