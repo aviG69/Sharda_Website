@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import { FaYoutube, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 export default function Navbar() {
   return (
@@ -15,7 +16,7 @@ export default function Navbar() {
       </div>
 
       {/* RIGHT SIDE (LINKS) */}
-      <div>
+      <div className="nav-links">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/batches">Batches</NavLink>
         <NavLink to="/apply">Apply</NavLink>

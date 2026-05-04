@@ -12,7 +12,7 @@ export default function Home() {
       </section>
 
       {/* QUOTE / TRUST LINE */}
-      <section style={{ marginTop: "40px", textAlign: "center" }}>
+      <section style={{ marginTop: "10px", textAlign: "center" }}>
         <p style={{ fontStyle: "italic", color: "#1224c7" }}>
           "Success in exams is not luck — it’s the result of consistent guidance and effort."
         </p>
