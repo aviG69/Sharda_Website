@@ -26,14 +26,12 @@ function App() {
       </div>
       <div className="app-content">
         <Navbar />
-        <main className="page-body">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/batches" element={<Batches />} />
-            <Route path="/apply" element={<Apply />} />
-            <Route path="/alumni" element={<Alumni />} />
-          </Routes>
-        </main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/batches" element={<Batches />} />
+          <Route path="/apply" element={<Apply />} />
+          <Route path="/alumni" element={<Alumni />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
