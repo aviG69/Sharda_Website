@@ -21,18 +21,21 @@
 .page-corner-icons {
   position: absolute;
   top: 15;
-  left: 15;
+  left: 0;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   gap: 12px;
   padding: 16px 20px;
-  margin: 0;
+  margin: -30px;
   border-radius: 12px;
   background: transparent;
   box-shadow: none;
   width: fit-content;
-  z-index: 10;
+  z-index: 1000;
+  margin-left: -425px;
+  white-space: nowrap;
 }
 
 .page-corner-icons a {
@@ -52,7 +55,8 @@
 
 .app-content {
   position: relative;
-  padding: 0 20px 20px;
+  width: 100%;
+  padding: 20px;
 }
 
 
@@ -60,17 +64,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 140px;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px 0 20px 0;
+  padding: 15px 0 20px 0;
   margin-top: 0;
 }
 
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
+@media (max-width: 768px) {
+  .nav{
+    margin-left: 0px;
+    padding-top: 60px;
+  }
 }
 
 .nav-links {
