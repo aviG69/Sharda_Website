@@ -10,21 +10,21 @@ import Alumni from "./pages/Alumni";
 function App() {
   return (
     <BrowserRouter>
+      <div className="page-corner-icons">
+        <a href="https://www.youtube.com/channel/UCiVzwYNYKlM5aCNj7cLccfw" target="_blank" rel="noopener noreferrer">
+          <FaYoutube style={{ color: '#FF0000', fontSize: '20px' }} />
+        </a>
+        <a href="https://www.facebook.com/sharda-tutorial" target="_blank" rel="noopener noreferrer">
+          <FaFacebook style={{ color: '#1877F2', fontSize: '20px' }} />
+        </a>
+        <a href="https://www.instagram.com/sharda_tutorial" target="_blank" rel="noopener noreferrer">
+          <FaInstagram style={{ color: '#E4405F', fontSize: '20px' }} />
+        </a>
+        <a href="https://www.twitter.com/sharda_tutorial" target="_blank" rel="noopener noreferrer">
+          <FaTwitter style={{ color: '#1DA1F2', fontSize: '20px' }} />
+        </a>
+      </div>
       <div className="app-content">
-        <div className="page-corner-icons">
-          <a href="https://www.youtube.com/channel/UCiVzwYNYKlM5aCNj7cLccfw" target="_blank" rel="noopener noreferrer">
-            <FaYoutube style={{ color: '#FF0000', fontSize: '22px' }} />
-          </a>
-          <a href="https://www.facebook.com/sharda-tutorial" target="_blank" rel="noopener noreferrer">
-            <FaFacebook style={{ color: '#1877F2', fontSize: '22px' }} />
-          </a>
-          <a href="https://www.instagram.com/sharda_tutorial" target="_blank" rel="noopener noreferrer">
-            <FaInstagram style={{ color: '#E4405F', fontSize: '22px' }} />
-          </a>
-          <a href="https://www.twitter.com/sharda_tutorial" target="_blank" rel="noopener noreferrer">
-            <FaTwitter style={{ color: '#1DA1F2', fontSize: '22px' }} />
-          </a>
-        </div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
