@@ -6,8 +6,8 @@ export default function Home() {
     <div>
       {/* HERO */}
       <section className="hero">
-        <h1>Strong Foundation for Classes 9–12</h1>
-        <p>Small batches. Personal attention. Proven results.</p>
+        <h1>Welcome to Sharda Tutorials</h1>
+        <p>Strong Foundation for Classes 9–12</p>
         <Link to="/apply" className="applyhome-btn">Apply Now</Link>
       </section>
 
