@@ -1,6 +1,17 @@
-# React + Vite
+# Sharda Tutorials
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite website for Sharda Tutorials tuition center.
+
+This project provides a modern, fast, and responsive website for the tuition center, built with React and Vite.
+
+## Features
+
+- **React + Vite**: Fast development with Hot Module Replacement (HMR)
+- **Educational Content**: Designed to showcase tuition center offerings
+- **Responsive Design**: Works on desktop and mobile devices
+- **Modern Tooling**: Includes ESLint for code quality
+
+## Official Plugins
 
 Currently, two official plugins are available:
 
@@ -9,7 +20,7 @@ Currently, two official plugins are available:
 
 ## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The React Compiler is not enabled in this project because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
 ## Expanding the ESLint configuration
 
